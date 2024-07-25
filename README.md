@@ -1,4 +1,3 @@
-
 # IMI Spieleabend
 
 [![Latest-Release](https://img.shields.io/github/v/release/Chris-GW/IMI-Spieleabend?include_prereleases)](https://github.com/Chris-GW/IMI-Spieleabend/releases)
@@ -11,6 +10,7 @@
 ---
 
 ## Installation
+
 IMI Spieleabend requires node.js v20.16+ and npm.  
 Releases are available on the [IMI Spieleabend release page](https://github.com/Chris-GW/IMI-Spieleabend/releases).
 
@@ -30,23 +30,22 @@ npm run start
 
 ## Contributors
 
-| Developer | 
-| :---: |
-| [![Chris-GW](https://avatars.githubusercontent.com/u/8419701?v=4&size=200) |    
-| <a href="https://github.com/Chris-GW" target="_blank">`github.com/Chris-GW`</a> | 
+|                                                Developer                                                 |
+| :------------------------------------------------------------------------------------------------------: |
+| [![Chris-GW](https://avatars.githubusercontent.com/u/8419701?v=4&size=200)](https://github.com/Chris-GW) |
+|             <a href="https://github.com/Chris-GW" target="_blank">`github.com/Chris-GW`</a>              |
 
-| Developer | 
-| :---: |
-| [![JohannesKramer](https://avatars.githubusercontent.com/u/120577398?v=4&size=200)](https://github.com/JohannesKramer) |    
-| <a href="https://github.com/JohannesKramer" target="_blank">`github.com/JohannesKramer`</a> | 
-
+|                                                       Developer                                                        |
+| :--------------------------------------------------------------------------------------------------------------------: |
+| [![JohannesKramer](https://avatars.githubusercontent.com/u/120577398?v=4&size=200)](https://github.com/JohannesKramer) |
+|              <a href="https://github.com/JohannesKramer" target="_blank">`github.com/JohannesKramer`</a>               |
 
 ---
 
 ## FAQ
 
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
+- **How do I do _specifically_ so and so?**
+  - No problem! Just do this.
 
 ---
 
