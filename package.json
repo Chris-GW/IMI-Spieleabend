@@ -7,8 +7,10 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "consolidate": "^1.0.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mustache": "^4.2.0"
   }
 }
