@@ -50,158 +50,19 @@
 <main class="container">
   <div class="container mt-5">
     <h1 class="text-center">Umfrage</h1>
-    <form>
+    <form id="surveyForm" action="/submit_form" method="post">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Geben Sie Ihren Namen ein">
+        <input type="text" class="form-control" name="teilnehmer" id="name" placeholder="Geben Sie Ihren Namen ein">
       </div>
-      <div class="form-group">
-        <label for="email">Email-Adresse</label>
-        <input type="email" class="form-control" id="email" placeholder="Geben Sie Ihre Email-Adresse ein">
-      </div>
-      <div class="form-group">
-        <label for="day">Welcher Tag passt Ihnen am besten?</label>
-        <select class="form-control" id="day">
-          <option value="monday">Montag</option>
-          <option value="tuesday">Dienstag</option>
-          <option value="wednesday">Mittwoch</option>
-          <option value="thursday">Donnerstag</option>
-          <option value="friday">Freitag</option>
-          <option value="saturday">Samstag</option>
-          <option value="sunday">Sonntag</option>
-        </select>
-      </div>
+<!--umfrage-->
       <div class="form-group">
         <label>Welcher Tag passt Ihnen am besten?</label>
-        <div class="d-flex justify-content-between">
-          <!-- Montag -->
-          <div class="day-column">
-            <h5>Montag</h5>
-            <div class="day-options">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="monday" id="monday1" value="option1">
-                <label class="form-check-label" for="monday1">Option 1</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="monday" id="monday2" value="option2">
-                <label class="form-check-label" for="monday2">Option 2</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="monday" id="monday3" value="option3">
-                <label class="form-check-label" for="monday3">Option 3</label>
-              </div>
-            </div>
-          </div>
-          <!-- Dienstag -->
-          <div class="day-column">
-            <h5>Dienstag</h5>
-            <div class="day-options">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="tuesday" id="tuesday1" value="option1">
-                <label class="form-check-label" for="tuesday1">Option 1</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="tuesday" id="tuesday2" value="option2">
-                <label class="form-check-label" for="tuesday2">Option 2</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="tuesday" id="tuesday3" value="option3">
-                <label class="form-check-label" for="tuesday3">Option 3</label>
-              </div>
-            </div>
-          </div>
-          <!-- Mittwoch -->
-          <div class="day-column">
-            <h5>Mittwoch</h5>
-            <div class="day-options">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="wednesday" id="wednesday1" value="option1">
-                <label class="form-check-label" for="wednesday1">Option 1</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="wednesday" id="wednesday2" value="option2">
-                <label class="form-check-label" for="wednesday2">Option 2</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="wednesday" id="wednesday3" value="option3">
-                <label class="form-check-label" for="wednesday3">Option 3</label>
-              </div>
-            </div>
-          </div>
-          <!-- Donnerstag -->
-          <div class="day-column">
-            <h5>Donnerstag</h5>
-            <div class="day-options">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="thursday" id="thursday1" value="option1">
-                <label class="form-check-label" for="thursday1">Option 1</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="thursday" id="thursday2" value="option2">
-                <label class="form-check-label" for="thursday2">Option 2</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="thursday" id="thursday3" value="option3">
-                <label class="form-check-label" for="thursday3">Option 3</label>
-              </div>
-            </div>
-          </div>
-          <!-- Freitag -->
-          <div class="day-column">
-            <h5>Freitag</h5>
-            <div class="day-options">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="friday" id="friday1" value="option1">
-                <label class="form-check-label" for="friday1">Option 1</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="friday" id="friday2" value="option2">
-                <label class="form-check-label" for="friday2">Option 2</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="friday" id="friday3" value="option3">
-                <label class="form-check-label" for="friday3">Option 3</label>
-              </div>
-            </div>
-          </div>
-          <!-- Samstag -->
-          <div class="day-column">
-            <h5>Samstag</h5>
-            <div class="day-options">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="saturday" id="saturday1" value="option1">
-                <label class="form-check-label" for="saturday1">Option 1</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="saturday" id="saturday2" value="option2">
-                <label class="form-check-label" for="saturday2">Option 2</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="saturday" id="saturday3" value="option3">
-                <label class="form-check-label" for="saturday3">Option 3</label>
-              </div>
-            </div>
-          </div>
-          <!-- Sonntag -->
-          <div class="day-column">
-            <h5>Sonntag</h5>
-            <div class="day-options">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sunday" id="sunday1" value="option1">
-                <label class="form-check-label" for="sunday1">Option 1</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sunday" id="sunday2" value="option2">
-                <label class="form-check-label" for="sunday2">Option 2</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sunday" id="sunday3" value="option3">
-                <label class="form-check-label" for="sunday3">Option 3</label>
-              </div>
-            </div>
-          </div>
+        <div id="daysContainer" class="d-flex justify-content-between">
+          <!-- Die Tage werden hier dynamisch eingefügt -->
         </div>
-      <button type="submit" class="btn btn-primary">Absenden</button>
+      </div>
+      <button id="submitButton" type="submit" class="btn btn-primary">Absenden</button>
     </form>
   </div>
 
@@ -210,6 +71,7 @@
 
 <footer></footer>
 <script src="/js/bootstrap.bundle.js"></script>
+<script src="/javascripts/umfrage.js"></script>
 </body>
 
 </html>

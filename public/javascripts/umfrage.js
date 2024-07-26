@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const anzahlTage = 5; // Anzahl der Tage kann hier angepasst werden
     const daysOfWeek = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
     const daysContainer = document.getElementById('daysContainer');
+    const options = ['nein', 'vielleicht', 'ja']
 
     for (let i = 0; i < anzahlTage; i++) {
         const dayColumn = document.createElement('div');
@@ -38,4 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
         dayColumn.appendChild(dayOptions);
         daysContainer.appendChild(dayColumn);
     }
+    document.getElementById('submitButton').addEventListener('submit',(event) =>{
+        event.preventDefault();
+        document.getElementById('submitButton').style.backgroundColor = '#5cb85c'
+
+    })
 });
