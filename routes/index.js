@@ -1,6 +1,6 @@
-var express = require('express');
-const {join} = require("node:path");
-var router = express.Router();
+let express = require("express");
+const { join } = require("node:path");
+let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

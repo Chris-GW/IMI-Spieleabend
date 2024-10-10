@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMI Spieleabend - Spiel Details</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Spiel Details</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {{#spieleKatalog}}
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{coverUrl}}" class="card-img-top" alt="cover art">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="card-text">{{subtitle}}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            {{/spieleKatalog}}
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

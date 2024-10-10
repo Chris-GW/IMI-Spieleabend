@@ -4,6 +4,7 @@ var cookieParser = require('cookie-parser');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var spieleRouter = require('./routes/spiele');
 const http = require("http");
 const consolidate = require('consolidate')
 
@@ -23,6 +24,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/spiele', spieleRouter);
 
 
 var server = http.createServer(app);
